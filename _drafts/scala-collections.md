@@ -37,7 +37,7 @@ Scala's collection data types are imporessively rich and complex. Picking the be
   + immutable: `Set(1, 2, 3)`
   + mutable: `collection.mutable.Set(1, 2, 3)`
 
-## Caveats
+## Caveats and tricks
 
 ### `val` vs `var`
  `var` allows operations such as `+=`. But what's under the hood is that a new collection is being created and attached to the same reference. You still can't modify values.
@@ -45,6 +45,12 @@ Scala's collection data types are imporessively rich and complex. Picking the be
 var x = Map("AL" -> "Alabama")  // still default immutable.Map
 x += ("CA"->"California")  // okay because a new map is being generated
 x("CA") = "Air China"  // illegal because of an attempt of modifying values
+```
+
+### Initialize through other collection objects
+```scala
+val m = Map(1->"a")
+val tm = collection.immutable.TreeMap(m.toArray:_*)
 ```
 
 ## Performance characteristics
