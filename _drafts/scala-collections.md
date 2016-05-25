@@ -14,7 +14,7 @@ Scala's collection data types are imporessively rich and complex. Picking the be
 |`Seq.IndexedSeq`|`Vector`| | | `const std::vector`|Fixed length seq. Immutable both in elements and length|
 |`Seq.IndexedSeq`|`ArrayBuffer`| | list | `std::vector` | Variable length seq. Mutable both in elements and length|
 |`Map`|`Map`| | | | Mutable and immutable map implemented as [hash trie]|
-|`Map`|`HashMap`| | dict | | Both mutable an immutable |
+|`Map`|`HashMap`| | dict | | Both mutable and immutable |
 |`Map`|`TreeMap`| | |`const std::map`| Immutable RB tree map |
 |     |         |`TreeMap`| |`std::map`| Mutable RB tree map |
 
