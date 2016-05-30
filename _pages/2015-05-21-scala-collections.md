@@ -3,7 +3,14 @@ title: Scala Collections Compared with Python, C++
 tags: [scala, data structure]
 ---
 
-Scala's collection data types are imporessively rich and complex. Picking the best suitable one may not be straightforward and some of the distinctions are subtle in actual use cases. This post aims to summarize the commonly used types, compared with their counterparts in Python and in C++. This comparison is more for helping position the mindset and making analogies than being precise, espeicially from the data structure perspective.
+Scala's collection data types are imporessively rich and complex. 
+Picking the best suitable one may not be straightforward and some of the distinctions can be subtle in actual use cases. 
+This post aims to summarize the commonly used types, compared with their counterparts in Python and in C++. 
+This comparison is more for helping position the mindset and making analogies than being precise, 
+espeicially from the data structure perspective.
+
+Changes and additions to this post may be made over time.
+
 
 ## Summary
 
@@ -56,7 +63,11 @@ val tm = collection.immutable.TreeMap(m.toArray:_*)
 
 ## Performance characteristics
 
-+ [docs.scala-lang](http://docs.scala-lang.org/overviews/collections/performance-characteristics.html)
+The best way to choose a proper collection type is to look at the complexity of operations being used in your applications.
+This perhaps is also the easist way to figure out the underlying implementation and data structure.
+ 
+The [official document](http://docs.scala-lang.org/overviews/collections/performance-characteristics.html) provides an excellent summary
+of the performance characteristics for each Scala collection class.
 
 
 
