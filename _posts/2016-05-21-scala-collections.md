@@ -47,8 +47,12 @@ Changes and additions to this post may be made over time.
 
 ## Caveats and tricks
 
+### Mutable vs immutable
+
+Immtable collection is optimized based on the agreement that both the size and the content cannot be changed, whereas mutable collection allows changes in both the size and the content. `Array` is something that lies in between: You can change the content but not the size.
+
 ### `val` vs `var`
- `var` allows operations such as `+=`. But what's under the hood is that a new collection is being created and attached to the same reference. You still can't modify values.
+ `var` for an immutable collection allows operations such as `+=`. But what's under the hood is that a new immutable collection is being created and attached to the same reference. The old one is then recycled. In this case, you still cannot modify values.
 ```scala
 var x = Map("AL" -> "Alabama")  // still default immutable.Map
 x += ("CA"->"California")  // okay because a new map is being generated
