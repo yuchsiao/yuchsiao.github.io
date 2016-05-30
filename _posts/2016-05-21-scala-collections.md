@@ -12,6 +12,13 @@ espeicially from the data structure perspective.
 Changes and additions to this post may be made over time.
 
 
+## Abstract class and trait hierarchy
+
+![scala collection hierarchy](http://docs.scala-lang.org/resources/images/collections.png)
+
+See more [here](http://docs.scala-lang.org/overviews/collections/overview.html)
+
+
 ## Summary
 
 |Scala     |       |Java|Python|C++|Description|
@@ -28,6 +35,8 @@ Changes and additions to this post may be made over time.
 
 
 [hash trie]: http://www.scala-lang.org/docu/files/collections-api/collections_19.html
+
+The underlying implementation is best described here for [mutable collection](http://docs.scala-lang.org/overviews/collections/concrete-mutable-collection-classes.html) and for [immutable collection](http://docs.scala-lang.org/overviews/collections/concrete-immutable-collection-classes).
 
 
 ## Handy literals
