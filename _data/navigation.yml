@@ -18,5 +18,5 @@ main:
 - title: "Tags"
   url: /tags/
   
-- title: "Categories"
-  url: /categories/
+#- title: "Categories"
+#  url: /categories/
