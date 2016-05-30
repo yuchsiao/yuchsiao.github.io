@@ -49,7 +49,7 @@ Changes and additions to this post may be made over time.
 
 ### Mutable vs immutable
 
-Immtable collection is optimized based on the agreement that both the size and the content cannot be changed, whereas mutable collection allows changes in both the size and the content. `Array` is something that lies in between: You can change the content but not the size.
+Immtable collection is optimized based on the agreement that both the size and the content cannot be changed, whereas mutable collection allows changes in both the size and the content. `Array` is something in between: you can change the content but not the size. Therefore, in some sense `Array` is mutable, but due to the underlying data structure, changes in size are natually not allowed. People are arguing on [this point](http://docs.scala-lang.org/overviews/collections/overview.html). The definition of *mutability* in the [official document](http://docs.scala-lang.org/overviews/collections/overview.html) is that "A mutable collection can be updated or extended in place." So logically, if any change can be made after the object being created, it is mutable. But, really, it doesn't matter much.
 
 ### `val` vs `var`
  `var` for an immutable collection allows operations such as `+=`. But what's under the hood is that a new immutable collection is being created and attached to the same reference. The old one is then recycled. In this case, you still cannot modify values.
