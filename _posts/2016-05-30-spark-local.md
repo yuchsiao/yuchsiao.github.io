@@ -26,3 +26,29 @@ Apache Toree was originally Spark Kernel, which is one of the most popular inter
 Once this installation is completed successfully and after launching `jupyter notebook`, you should be able to find a kernel 
 called "Apache Toree - Scala". More about Toree can be found on [Github](https://github.com/apache/incubator-toree) 
 and the [Toree](https://toree.incubator.apache.org/) page.
+
+
+## Toree magics
+
+You can use Toree magics in Jupyter notebook to configure project and jar depedencies. 
+For instance, to add [`jodi-time`](http://mvnrepository.com/artifact/joda-time/joda-time/2.9.4) for better date-time support, 
+```
+%adddeps joda-time joda-time 2.9.4
+```
+
+Its popular [Scala wrapper](http://mvnrepository.com/artifact/com.github.nscala-time/nscala-time_2.11/2.12.0) can also be used instead:
+```
+%adddeps com.github.nscala-time nscala-time 2.12.0 --transitive
+```
+
+To list all magics, 
+```
+%lsmagic
+```
+
+Magics are case-insensitive.
+
+There are also "cell" magics, which re-purpose the entire cell to, for instance, HTML, SQL, etc. 
+
+The official documents are buried in the [Wiki of the original Spark Kernel project](https://github.com/ibm-et/spark-kernel/wiki/List-of-Current-Magics-for-the-Spark-Kernel).
+
