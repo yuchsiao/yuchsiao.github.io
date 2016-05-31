@@ -40,7 +40,7 @@ For instance, to add [`jodi-time`](http://mvnrepository.com/artifact/joda-time/j
 Its popular [Scala wrapper](http://mvnrepository.com/artifact/com.github.nscala-time/nscala-time_2.11/2.12.0) can also be used instead:
 
 ```
-%adddeps com.github.nscala-time nscala-time 2.12.0 --transitive
+%adddeps com.github.nscala-time nscala-time_2.11 2.12.0 --transitive
 ```
 
 To list all magics, 
