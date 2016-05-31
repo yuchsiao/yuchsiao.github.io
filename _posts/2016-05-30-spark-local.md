@@ -7,7 +7,7 @@ This post is a note of installing Scala, Spark, and Toree on OS X Yosemite 10.10
 
 ## Install Spark
 
-```
+```sh
 brew install apache-spark
 ```
 This installation comes with scala of version `2.10.5`.
@@ -16,7 +16,7 @@ The spark version is `1.6.1`.
 
 ## Make Jupyter notebook work with Spark
 
-```
+```sh
 pip install --pre toree
 jupyter toree install --spark_home="/usr/local/Cellar/apache-spark/1.6.1/libexec/"
 ```
@@ -32,23 +32,24 @@ and the [Toree](https://toree.incubator.apache.org/) page.
 
 You can use Toree magics in Jupyter notebook to configure project and jar depedencies. 
 For instance, to add [`jodi-time`](http://mvnrepository.com/artifact/joda-time/joda-time/2.9.4) for better date-time support, 
+
 ```
 %adddeps joda-time joda-time 2.9.4
 ```
 
 Its popular [Scala wrapper](http://mvnrepository.com/artifact/com.github.nscala-time/nscala-time_2.11/2.12.0) can also be used instead:
+
 ```
 %adddeps com.github.nscala-time nscala-time 2.12.0 --transitive
 ```
 
 To list all magics, 
+
 ```
 %lsmagic
 ```
 
 Magics are case-insensitive.
-
 There are also "cell" magics, which re-purpose the entire cell to, for instance, HTML, SQL, etc. 
-
 The official documents are buried in the [Wiki of the original Spark Kernel project](https://github.com/ibm-et/spark-kernel/wiki/List-of-Current-Magics-for-the-Spark-Kernel).
 
