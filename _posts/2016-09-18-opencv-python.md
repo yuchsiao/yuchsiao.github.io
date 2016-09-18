@@ -19,3 +19,60 @@ This article aims to fit some of such gaps for newbies.
 It seems not stated explicitly, but the Python binding has an exception class called `cv2.error`.
 The class is not following the overall OpenCV Python binding naming convention so it may be subject to change in the future.
 
+## Display
+
+### Image
+
+One can use the `imshow` function from `matplotlib.pyplot`: 
+
+```python
+import matplotlib.pyplot as plt
+import cv2
+
+img_bgr = cv2.imread('sample.jpg')
+img_rgb = cv2.cvtColor(cv2.COLOR_BGR2RGB)
+plt.imshow(img_rgb)
+plt.axis('off')
+plt.show()
+```
+
+### Video
+
+Use ipython magic `clear_output(wait=True)` to update frame
+
+```python
+from IPython.display import clear_output
+import cv2
+import numpy as np
+import sys
+
+vid = cv2.VideoCapture(0)
+
+try:
+    while(True):
+        # Capture frame-by-frame
+        ret, frame = vid.read()
+        if not ret:
+            raise cv2.error("Camera failed to capture")
+
+        # Convert the image from OpenCV BGR format to matplotlib RGB format
+        # to display the image
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        
+        plt.axis('off')  # Turn off the axis
+        plt.imshow(res)
+        plt.show()
+
+        # Display the frame until new frame is available
+        clear_output(wait=True)
+        
+except KeyboardInterrupt:
+    sys.stdout.write("Keyboard Interrupt\n")
+except cv2.error as e:
+    sys.stderr.write("{}\n".format(e))
+finally:
+    vid.release()
+    # Message to be displayed after releasing the device
+    sys.stdout.write("Release Video Resource\n")
+
+```
