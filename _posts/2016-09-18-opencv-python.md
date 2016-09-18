@@ -19,7 +19,7 @@ This article aims to fit some of such gaps for newbies.
 It seems not stated explicitly, but the Python binding has an exception class called `cv2.error`.
 The class is not following the overall OpenCV Python binding naming convention so it may be subject to change in the future.
 
-## Display
+## Display in Jupyter Notebook
 
 ### Image
 
