@@ -29,12 +29,16 @@ One can use the `imshow` function from `matplotlib.pyplot`:
 import matplotlib.pyplot as plt
 import cv2
 
-img_bgr = cv2.imread('sample.jpg')
+img_bgr = cv2.imread('sample.jpg')  # OpenCV default: BGR
 img_rgb = cv2.cvtColor(cv2.COLOR_BGR2RGB)
 plt.imshow(img_rgb)
 plt.axis('off')
 plt.show()
 ```
+
+Note that OpenCV default is BGR for some history reason, whereas `plt.imshow` is in the RGB order.
+`cv2.imshow`, on the other hand, is consistent with `cv2.imread` in the BGR order.
+
 
 ### Video
 
