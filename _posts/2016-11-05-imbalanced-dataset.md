@@ -33,11 +33,20 @@ The original paper "[SMOTE: Synthetic Minority Over-sampling Technique](http://w
 
 ## Different algorithms
 
+Consider decision tree models
+
 ## Penalization
+
+Penalize making mistakes for the minority classes.
 
 ## Different perspectives
 
-## Creative subproblems
+Anomaly or Change detection
+
+## Transform problems
+
++ [One-class classification](https://en.wikipedia.org/wiki/One-class_classification): anomaly detection, change detection, novelty detection, outlier detection
++ Subdivide the large class into small classes
 
 
 
