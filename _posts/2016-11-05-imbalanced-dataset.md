@@ -34,7 +34,7 @@ Remove the samples of majority classes that are very close to the minority cases
 
 ### Resampling and bagging
 
-From [Wallace2011](http://ieeexplore.ieee.org/document/6137280/). Explained in [Learning Imbalanced Classes](http://svds.com/learning-imbalanced-classes/). Steps are as below
+From [Wallace2011]. Steps are as below
 
 + Bootstrap
 + Balance by downsampling into N different datasets
@@ -67,15 +67,14 @@ Anomaly or Change detection
 ## Transform problems
 
 + [One-class classification](https://en.wikipedia.org/wiki/One-class_classification): anomaly detection, change detection, novelty detection, outlier detection. This may be the worst-case scenario.
-+ Subdivide the large class into L small classes, and train L predictors against the minority class. Then average the prediction scores.
++ Subdivide the large class into L small classes, and train L predictors against the minority class. Then average the prediction scores. e.g. [Wallace2011].
 + Cluster large class into N clusters and use the N mediods to represent the large class. N is the sample size of the minority class.
-+ Corrupt feature data with known distributions to add robustness of training (same sample size though)[van der Maaten-2013](http://jmlr.csail.mit.edu/proceedings/papers/v28/vandermaaten13.pdf). Similar to drop-out or zero-out.
++ Corrupt feature data with known distributions to add robustness of training (same sample size though)[van der Maaten-2013]. Similar to drop-out or zero-out.
 + A boosting algorithm by [Schapire](http://rob.schapire.net/papers/strengthofweak.pdf)
 
 
 [Tomek1978]: https://www.scopus.com/record/display.uri?eid=2-s2.0-0016969272&origin=inward&txGid=8E86CF1FBDAADB531ACE35C3C1A4C41B.wsnAw8kcdt7IPYLO0V48gA%3a7
-
-
-
+[Wallace2011]: http://ieeexplore.ieee.org/document/6137280/
+[van der Maaten-2013]: http://jmlr.csail.mit.edu/proceedings/papers/v28/vandermaaten13.pdf
 
 
