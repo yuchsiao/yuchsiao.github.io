@@ -29,15 +29,15 @@ This post collects and summarizes the methods from the following posts
 
 ### SMOTE
 
-The original paper "[SMOTE: Synthetic Minority Over-sampling Technique](http://www.jair.org/papers/paper953.html)"
+The original paper "[SMOTE: Synthetic Minority Over-sampling Technique](http://www.jair.org/papers/paper953.html)", [SMOTE](https://arxiv.org/pdf/1106.1813.pdf)
+
+## Penalization, cost-sensitive learning
+
+Penalize making mistakes for the minority classes.
 
 ## Different algorithms
 
 Consider decision tree models
-
-## Penalization
-
-Penalize making mistakes for the minority classes.
 
 ## Different perspectives
 
@@ -45,8 +45,13 @@ Anomaly or Change detection
 
 ## Transform problems
 
-+ [One-class classification](https://en.wikipedia.org/wiki/One-class_classification): anomaly detection, change detection, novelty detection, outlier detection
-+ Subdivide the large class into small classes
++ [One-class classification](https://en.wikipedia.org/wiki/One-class_classification): anomaly detection, change detection, novelty detection, outlier detection. This may be the worst-case scenario.
++ Subdivide the large class into L small classes, and train L predictors against the minority class. Then average the prediction scores.
++ Cluster large class into N clusters and use the N mediods to represent the large class. N is the sample size of the minority class.
++ Corrupt feature data with known distributions to add robustness of training (same sample size though)[van der Maaten-2013](http://jmlr.csail.mit.edu/proceedings/papers/v28/vandermaaten13.pdf). Similar to drop-out or zero-out.
++ A boosting algorithm by [Schapire](http://rob.schapire.net/papers/strengthofweak.pdf)
+
+
 
 
 
