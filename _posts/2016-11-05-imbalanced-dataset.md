@@ -14,7 +14,7 @@ This post collects and summarizes the methods from the following posts
 
 ## The Big Picture
 
-The first thing of all is using the proper metric. If the classes are very much skewed, precision-recall curve is better than ROC. However, experience also taught me that if the minority samples in the test set are too few, PR curve and the area under it may be numerically unstable, giving a zigzag-like shape. 
+The first thing of all is using the proper metric. If the classes are very much skewed, precision-recall curve is better than ROC. However, experience also taught me that if the minority samples in the test set are too few, PR curve may give a zigzag shape of the curve, which is in turn numerically unstable in estimating the area under the curve.
 
 The common strategy for imbalanced learning is to resample the dataset, if getting more data is not an option. Resampling can be either over-sampling, under-sampling, or over-sampling followed by under-sampling, mixed with certain ensample strategies. Over-sampling can be done in a naive way, or use SMOTE-like method to generate synthetic samples. Similarly, under-sampling can be done just taking few samples from the majority class, or in a more informed process, by looking at the potential boundary between classes and removing the sample from the majority class. Ensamble methods can be simple bagging, the majority vote for several weak classifier, or can be much more involved and more learning-algorithm-specific strategy. These over-sampling, under-sampling, ensembling methods have been mixed into various combinations. The above are the main stream of handling imbalanced datasets.
 
