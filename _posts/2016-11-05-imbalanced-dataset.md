@@ -20,7 +20,11 @@ This post collects and summarizes the methods from the following posts
 
 ### Upsampling
 
+Lowers the variance
+
 ### Downsampling
+
+Increases the variance
 
 ### Good ratios
 
