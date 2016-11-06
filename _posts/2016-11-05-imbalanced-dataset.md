@@ -29,6 +29,7 @@ Lowers the variance of the minority class.
 
 #### Cluster-based sampling method (cluster-based oversampling - CBO)
 
+
 ### Under-sampling
 
 Increases the variance of the majority class.
@@ -38,18 +39,20 @@ Increases the variance of the majority class.
 From [Tomek1978].
 Remove the samples of majority classes that are very close to the minority cases. Python package is [here](https://github.com/ojtwist/TomekLink)
 
-#### Informed undersampling, or ensemble sampling (EasyEnsemble and BalanceCascade)
-
 #### Cluster majority class
 
 Cluster large class into N clusters and use the N mediods to represent the large class. N is the sample size of the minority class.
+
+#### Informed undersampling, or ensemble sampling (EasyEnsemble and BalanceCascade)
+
 
 ### Over-sampling followed by under-sampling
 
 Under-sampling are performed by T-links or ENN (cleaning rules)
 
-#### SMOTE + Tomek links 
-#### SMOTE + ENN 
++ SMOTE + Tomek links 
++ SMOTE + ENN 
+
 
 ### Other sampling techniques
 
@@ -88,17 +91,14 @@ Procedures are as below:
 
 Penalize making mistakes for the minority classes.
 
-#### Cost-Sensitive Dataspace Weighting with Adaptive Boosting (AdaC1, AdaC2, and AdaC3)
++ Cost-Sensitive Dataspace Weighting with Adaptive Boosting (AdaC1, AdaC2, and AdaC3)
++ Cost-Sensitive Decision Trees 
 
-#### Cost-Sensitive Decision Trees 
+  >In regards to decision trees, cost-sensitive fitting can take three forms: first, cost-sensitive adjustments can be applied to the decision threshold; second, cost-sensitive considera- tions can be given to the split criteria at each node; and lastly, cost-sensitive pruning schemes can be applied to the tree.
 
->In regards to decision trees, cost-sensitive fitting can take three forms: first, cost-sensitive adjustments can be applied to the decision threshold; second, cost-sensitive considera- tions can be given to the split criteria at each node; and lastly, cost-sensitive pruning schemes can be applied to the tree.
-
-#### Cost-Sensitive Neural Networks
-
-#### Cost-Sensitive Bayesian Classifiers
-
-#### Cost-Sensitive SVMs
++ Cost-Sensitive Neural Networks
++ Cost-Sensitive Bayesian Classifiers
++ Cost-Sensitive SVMs
 
 
 ## Different algorithms
