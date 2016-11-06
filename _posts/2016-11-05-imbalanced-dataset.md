@@ -23,13 +23,13 @@ This post collects and summarizes the methods from the following posts
 
 ## Resampling
 
-### Upsampling
+### Over-sampling
 
 Lowers the variance of the minority class.
 
 #### Cluster-based sampling method (cluster-based oversampling - CBO)
 
-### Downsampling
+### Under-sampling
 
 Increases the variance of the majority class.
 
@@ -38,12 +38,18 @@ Increases the variance of the majority class.
 From [Tomek1978].
 Remove the samples of majority classes that are very close to the minority cases. Python package is [here](https://github.com/ojtwist/TomekLink)
 
-#### Informed undersampling (EasyEnsemble and BalanceCascade)
+#### Informed undersampling, or ensemble sampling (EasyEnsemble and BalanceCascade)
 
 #### Cluster majority class
 
 Cluster large class into N clusters and use the N mediods to represent the large class. N is the sample size of the minority class.
 
+### Over-sampling followed by under-sampling
+
+Under-sampling are performed by T-links or ENN (cleaning rules)
+
+#### SMOTE + Tomek links 
+#### SMOTE + ENN 
 
 ### Other sampling techniques
 
@@ -63,6 +69,7 @@ From [Wallace2011]. Subdivide the large class into L small classes, and train L 
 #### Integration of sampling and boosting (SMOTEBoost, DataBoost-IM)
 
 #### Over / undersampling with jittering (JOUS-Boost)
+
 
 ## Synthetic samples
 
