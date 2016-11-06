@@ -29,7 +29,7 @@ Increases the variance
 
 #### Tomek link
 
-From [Tomek1978](https://www.scopus.com/record/display.uri?eid=2-s2.0-0016969272&origin=inward&txGid=8E86CF1FBDAADB531ACE35C3C1A4C41B.wsnAw8kcdt7IPYLO0V48gA%3a7).
+From [Tomek1978].
 Remove the samples of majority classes that are very close to the minority cases. Python package is [here](https://github.com/ojtwist/TomekLink)
 
 ### Resampling and bagging
@@ -73,7 +73,7 @@ Anomaly or Change detection
 + A boosting algorithm by [Schapire](http://rob.schapire.net/papers/strengthofweak.pdf)
 
 
-
+[Tomek1978]: https://www.scopus.com/record/display.uri?eid=2-s2.0-0016969272&origin=inward&txGid=8E86CF1FBDAADB531ACE35C3C1A4C41B.wsnAw8kcdt7IPYLO0V48gA%3a7
 
 
 
