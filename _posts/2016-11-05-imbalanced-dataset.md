@@ -21,18 +21,24 @@ This post collects and summarizes the methods from the following posts
 
 ### Upsampling
 
-Lowers the variance
+Lowers the variance of the minority class.
+
+#### Cluster-based sampling method (cluster-based oversampling - CBO)
 
 ### Downsampling
 
-Increases the variance
+Increases the variance of the majority class.
 
 #### Tomek link
 
 From [Tomek1978].
 Remove the samples of majority classes that are very close to the minority cases. Python package is [here](https://github.com/ojtwist/TomekLink)
 
-### Resampling and bagging
+#### Informed undersampling (EasyEnsemble and BalanceCascade)
+
+### Other sampling techniques
+
+#### Resampling and bagging
 
 From [Wallace2011]. Steps are as below
 
@@ -41,9 +47,17 @@ From [Wallace2011]. Steps are as below
 + Train decision trees to each dataset. The decision boundaries are having high variance.
 + Bagging all trees. Make a majority vote.
 
+#### Sampling with data cleaning techniques. 
+
+> Some representative work in this area includes the OSS method [42], the condensed nearest neighbor rule and Tomek Links (CNN+Tomek Links) integration method [22], the neighborhood cleaning rule (NCL) [36] based on the edited nearest neighbor (ENN) rule—which removes examples that differ from two of its three nearest neighbors, and the integrations of SMOTE with ENN (SMOTE+ENN) and SMOTE with Tomek links (SMOTE + Tomek)
+
+#### Integration of sampling and boosting (SMOTEBoost, DataBoost-IM)
+
+#### Over / undersampling with jittering (JOUS-Boost)
+
 ## Synthetic samples
 
-### SMOTE
+#### SMOTE
 
 The original paper "[SMOTE: Synthetic Minority Over-sampling Technique](http://www.jair.org/papers/paper953.html)", [SMOTE](https://arxiv.org/pdf/1106.1813.pdf)
 Procedures are as below:
@@ -51,6 +65,8 @@ Procedures are as below:
 + For K times replication, find K-nearest neighbors for each minority sample.
 + Interpolate at halfway for each pair of the sample and its K-nearest neighbors to generate K synthetic samples
 + Note the limitation: "Formally, SMOTE can only fill in the convex hull of existing minority examples, but not create new exterior regions of minority examples."
+
+#### Adaptive Synthetic Sampling (Borderline-SMOTE and ADA-SYN)
 
 ## Penalization, cost-sensitive learning
 
