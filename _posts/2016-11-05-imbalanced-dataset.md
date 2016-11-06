@@ -18,6 +18,7 @@ This post collects and summarizes the methods from the following posts
 + Kappa (Cohen's Kappa)
 + ROC (the development for multi-class problems are reletively less mature)
 + PR curve:
+  
   >Although ROC curves provide powerful methods to visualize performance evaluation, they also have their own limitations. In the case of highly skewed data sets, it is observed that the ROC curve may provide an overly optimistic view of an algorithm’s performance. Under such situations, the PR curves can provide a more informative representation of performance assessment
 
 ## Resampling
