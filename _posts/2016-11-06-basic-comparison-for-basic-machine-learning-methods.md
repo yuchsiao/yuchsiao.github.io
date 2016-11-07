@@ -8,19 +8,56 @@ tags: [machine learning, comparison]
 
 ## Logistic Regression
 
++ For linearly separable data
++ Pretty robust. Can avoid overfitting by l1 or l2 regularization
++ Easily distributable
++ Get probability. Can do ranking directly
++ With l2 regularization, LR can be used as a baseline for any other fancier solutions
++ Not so good for categorical variables
++ Then go for SVM for Tree Ensembles models
++ Discriminative model
++ Can be online. Just update with new data using online gradient descent
+
+## Naive Bayes 
+
++ Simple. Just do a bunch of counts.
++ Can be used as a baseline as well (just don't dismiss it... yet)
++ High bias and low variance. But still useful for small data size [Domingos](http://web.cs.ucdavis.edu/~vemuri/classes/ecs271/Bayesian.pdf)
++ Low variance means less likely to overfit
++ Generative model
 
 ## SVM
 
++ Hinge loss
++ Maximum margin
++ Quite a few nonlinear kernels (probably better than LR with a nonlinear transformation)
++ Good for high dimensional space. 
++ Reported better for text classification problems
++ Inefficient training. Not for industry-scale applications
++ Memory intensive
 
-## Decision Trees
+## Tree Ensembles
+
++ Good for high dimensional space
++ Good for nonlinear variables
++ Good for categorical variables
++ Non-parametric. Don't need to worry about outliers or linearly separable.
+
 
 ### Random Forest
 
++ Usually work out of box
+
 ### Gradient Boost Tree
+
++ Generally perform better, if getting it right
++ More hyper-parameters to tune
++ Prone to overfitting
 
 ## Deep Learning
 
-
++ Not general-purpose
++ Applied when you believe you can still squeeze more after trying above
 
 # Off topic below
 
@@ -50,14 +87,15 @@ tags: [machine learning, comparison]
 + L1 regularization and sparsity
 + Automated feature detecteion like NMF
 
-## ML in 2000's
-
-+ All learning is non-convex.
-
 ## Potentially interesting readings
 
 + [Why does deep learning work?](https://charlesmartin14.wordpress.com/2015/03/25/why-does-deep-learning-work/)
 + [Why does deep learning work II](https://charlesmartin14.wordpress.com/2015/04/01/why-deep-learning-works-ii-the-renormalization-group/)
 
+## Some quotes
+
+>Better data often beats better algorithms.
+
+>All learning is non-convex.
 
 
