@@ -3,6 +3,8 @@ title: Basic Comparison for basic machine learning methods
 tags: [machine learning, comparison]
 ---
 
+This article summarizes the following post
+
 + [How true is this slide on deep learning](https://www.quora.com/How-true-is-this-slide-on-deep-learning)
 
 
@@ -43,7 +45,6 @@ tags: [machine learning, comparison]
 + Good for categorical variables
 + Non-parametric. Don't need to worry about outliers or linearly separable.
 
-
 ### Random Forest
 
 + Usually work out of box
@@ -58,6 +59,11 @@ tags: [machine learning, comparison]
 
 + Not general-purpose
 + Applied when you believe you can still squeeze more after trying above
+
+## Interesting reading
+
++ [Do we need hundreds of classifiers to solve real world classification problems?](http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf)
+
 
 # Off topic below
 
