@@ -54,6 +54,7 @@ This article summarizes the following post
 + Generally perform better, if getting it right
 + More hyper-parameters to tune
 + Prone to overfitting
++ Not so good for multi-class problems. # of trees is `n_classes * n_estimators`.
 
 ## Deep Learning
 
