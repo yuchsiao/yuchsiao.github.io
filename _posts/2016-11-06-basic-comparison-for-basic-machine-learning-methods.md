@@ -17,8 +17,8 @@ This article summarizes the following post
 + With l2 regularization, LR can be used as a baseline for any other fancier solutions
 + Not so good for categorical variables
 + Then go for SVM for Tree Ensembles models
-+ Discriminative model
 + Can be online. Just update with new data using online gradient descent
++ Discriminative model
 
 ## Naive Bayes 
 
@@ -26,7 +26,7 @@ This article summarizes the following post
 + Can be used as a baseline as well (just don't dismiss it... yet)
 + High bias and low variance. But still useful for small data size [Domingos](http://web.cs.ucdavis.edu/~vemuri/classes/ecs271/Bayesian.pdf)
 + Low variance means less likely to overfit
-+ Generative model
++ Generative 
 
 ## SVM
 
@@ -37,6 +37,7 @@ This article summarizes the following post
 + Reported better for text classification problems
 + Inefficient training. Not for industry-scale applications
 + Memory intensive
++ Discriminative
 
 ## Tree Ensembles
 
@@ -44,6 +45,7 @@ This article summarizes the following post
 + Good for nonlinear variables
 + Good for categorical variables
 + Non-parametric. Don't need to worry about outliers or linearly separable.
++ Discriminative
 
 ### Random Forest
 
@@ -65,6 +67,22 @@ This article summarizes the following post
 
 + [Do we need hundreds of classifiers to solve real world classification problems?](http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf)
 
+## Generative vs Discriminative Modeling
+
+### Generative
+
++ Models distribution: P(X,Y) or ( P(X|Y) and P(Y) )
++ More straightforward to detect shifts in distribution
++ Easier to detect outliers
++ The assumption of distributions tends to prevent overfitting
+
+### Discriminative
+
++ Models classification splits
+
+## Some side notes
+
++ tends to overfit == high variance (of the parameter estimates)
 
 # Off topic below
 
