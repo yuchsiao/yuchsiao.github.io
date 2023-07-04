@@ -20,8 +20,8 @@
                                 <hr />
                                 <p>
                                     A Tech Lead at Google AI with a PhD from MIT
-                                    with 12+ years of experience in <br/>
-                                    ML/DL for NLP, Multimodal LM, and recently LLMs.<br/>
+                                    with 13+ years of experience in <br/>
+                                    ML/DL for NLP, LLM, Multimodal LLM, and Generative AI.<br/>
                                     Ex-Apple ane Ex-Microsoft ML Scientist.
                                 </p>
                             </header>
@@ -267,11 +267,12 @@
                                     3) The complete answer may come from multiple parts from the screen (left of the image).
                                        The task requires the model to include all pieces to get a full score.
                                 </p>
+                                <a href="https://arxiv.org/abs/2209.08199" target="_blank">Preprint</a>.
                             </article>
                             <article class="col-6 col-12-mobile special">
                                 <img src="images/screenshot-multimodal-lm-700x400.png" alt=""  class="image featured"/>
                                 <header>
-                                    <h3>Multimodal LM for Document and Screen Understanding</h3>
+                                    <h3>Multimodal LLM for Document and Screen Understanding</h3>
                                 </header>
                                 <p>
                                     Scanned document images and screenshots share a common characteristic:
@@ -347,22 +348,26 @@
                                 <hr>
                                 <img src="images/screenshot-ml-tx-700x400.png" alt=""  class="image featured"/>
                                 <header>
-                                    <h3>Text Classification for Machine-Generated Transaction Data</h3>
+                                    <h3>Text Classification for Transaction Data</h3>
                                 </header>
                                 <p>
-                                    Machine-generated
-                                    transaction descriptions are ungrammatical with word order scrambled and
-                                    difficult to tokenize because of inconsistent spaces.
+                                    The text in credit card transaction descriptions are largely ungrammatical,
+                                    with scrambled word ordering and inconsistent space delimiters (e.g., whitespace, asterisk,
+                                    and/or a mixture of both).
+                                    This poses challenges in proper tokenization.
                                     Examples can be seen above.
-                                    This messiness comes from the fact that they are jointly determined by
+                                    <!-- This messiness comes from the fact that they are jointly determined by
                                     multiple parties: credit card companies, point-of-sale systems, and store owners.
                                     Each part of the transaction pipeline prepends or appends the words without following
-                                    a particular standard or guideline.
+                                    a particular standard or guideline. -->
                                 </p>
                                 <p>
-                                    In this case, RNN may be of little help but just computationally expensive.
+                                    In this case, RNN or Transformers may be of little help but just computationally expensive.
                                     A better trade-off can be achieved using a traditional NLP method, such as
                                     bag-of-words featurization on letter n-grams, followed by classic multi-class classification methods.
+                                    This method is patented here:
+                                </p>
+                                <p>
                                     <a href="https://patents.google.com/patent/US10984340B2/en" target="_blank">Patent</a>.
                                 </p>
                             </article>
@@ -384,6 +389,8 @@
                                 <p>
                                     The overall recommender system is implemented in Python and was served
                                     as a web application.
+                                </p>
+                                <p>
                                     <a href="https://slides.com/yuchsiao/knowgit" target="_blank">Slides</a>.
                                     <a href="https://github.com/yuchsiao/knowgit" target="_blank">GitHub</a>.
                                 </p>
@@ -409,6 +416,8 @@
                                     I proposed an augmentation method "super points," a representation of point clusters,
                                     to help the neural net recognize point proximity information.
                                     This improves the prediction accuracy against the ModelNet40 benchmark.
+                                </p>
+                                <p>
                                     <a href="https://github.com/yuchsiao/doc/blob/master/super-point-net.pdf" target="_blank">Report</a>.
                                 </p>
                             </article>
@@ -436,6 +445,8 @@
                                     are numerically stable and implemented a convex optimization program.
                                     This method has been successfully applied to nonlinear circuits,
                                     human arterial networks, and finance time-series stock price prediction.
+                                </p>
+                                <p>
                                     <a href="https://github.com/yuchsiao/doc/blob/master/thesis_hsiao.pdf" target="_blank">Thesis</a>.
                                     <a href="https://github.com/yuchsiao/andsm/" target="_blank">GitHub</a>.
                                 </p>
@@ -461,6 +472,8 @@
                                     CAPLET provides both intuitive GUI and command line interfaces.
                                     The underlying algorithm is specialized for VLSI interconnects in Manhattan
                                     geometries inside a uniform dielectric material.
+                                </p>
+                                <p>
                                     <a href="https://yuchsiao.github.io/caplet" target="_blank">Website</a>.
                                     <a href="https://github.com/yuchsiao/caplet/" target="_blank">GitHub</a>.
                                 </p>
