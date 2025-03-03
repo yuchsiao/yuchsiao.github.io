@@ -140,7 +140,42 @@ strong, b {
   color: #232323;
 }
 
-em, i {
+em {
+  font-weight: 400;
+  color: #ee6f6f;
+  text-shadow: rgba(60, 60, 60, 0.6274509804) 1px 0 2px;
+}
+
+span.google-blue {
+  color: #176BEF;
+  font-weight: 600;
+}
+
+span.google-green {
+  color: #179C52;
+  font-weight: 600;
+}
+
+span.google-yellow {
+  color: #F7B529;
+  font-weight: 600;
+}
+
+span.google-red {
+  color: #FF3E30;
+  font-weight: 600;
+}
+
+span.apple {
+  color: #A2AAAD;
+  font-weight: 600;
+}
+
+span.microsoft {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+i {
   font-style: italic;
 }
 
@@ -1626,9 +1661,8 @@ button,
   position: relative;
   display: inline-block;
   background: #ef4b3c;
-  color: #fff;
+  color: #f5f5f5;
   text-align: center;
-  border-radius: 0.5em;
   text-decoration: none;
   padding: 0.65em 3em 0.65em 3em;
   border: 0;
@@ -1646,7 +1680,7 @@ input[type=reset]:hover,
 button:hover,
 .button:hover {
   color: #fff;
-  background: #ef6f68;
+  background: #eb807a;
 }
 input[type=button].alt,
 input[type=submit].alt,

@@ -19,10 +19,9 @@
                                 <h1><a href="index.html" id="logo">Hi! I'm Yo,</a></h1>
                                 <hr />
                                 <p>
-                                    A Tech Lead at Google AI with a PhD from MIT
-                                    with 13+ years of experience in <br/>
-                                    ML/DL for NLP, LLM, Multimodal LLM, and Generative AI.<br/>
-                                    Ex-Apple ane Ex-Microsoft ML Scientist.
+                                    NLP Applied Research Manager with a <em>PhD</em> from <em>MIT</em><br/>
+                                    with <em>15+</em> years of experience in ML/DL for NLP, LLM, Multimodal LLM, and Generative AI.<br/>
+                                    Ex-<span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span>, <span class="apple">Apple</span> and <span class="microsoft">Microsoft</span> ML Scientist/Engineer.
                                 </p>
                             </header>
                             <footer>
@@ -161,18 +160,24 @@
                     <article id="math-skills" class="container special">
                         <!--<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>-->
                         <header>
-                            <h2>Technical Skills</h2>
+                            <h2>Skills</h2>
                         </header>
                         <ul>
+                            <li><strong>Leadership</strong> | 
+                                AI/LLM Research Strategy & Scoping, LLM Feature Development & Productization, Cross-functional Team Leadership, Stakeholder Management, Technical Career Development & Mentorship, ML/LLM Knowledge Transfer & Coaching
+                            </li>
+                            <li><strong>NLP & LLM</strong> | 
+                                Large Language Models, Question Answering, Information Retrieval, Pre-training, Parameter Efficient Fine-tuning, Retrieval Augmented Generation (RAG), LLM Evaluation, Efficient and Scalable Serving, LLM System Architecture.
+                            </li>
+                            <li><strong>Computer Vision</strong> |
+                                Image Classification, Object Detection, Vision Transformer, DeTR, EfficientNet. 
+                            </li>
+                            <li><strong>Multimodality</strong> |
+                                Visual-Language Pre-Training, Document Understanding, Screen Understanding, Vision Transformer, Visual Question Answering.
+                            </li>
                             <li><strong>ML/DL</strong> |
                                 CNN, RNN, LSTM, Transformer, Seq2Seq, Self-Supervised Pre-Training, Multitask Learning, Domain Adaptation, 
                                 GBDT, SVM, Ensemble Methods.
-                            </li>
-                            <li><strong>DL for NLP</strong> |
-                                Language Modeling, Embedding, Text Classification, Question Answering, Sequence Labeling, Dialogue Systems.
-                            </li>
-                            <li><strong>DL for Multimodality</strong> |
-                                Visual-Language Pre-Training, Document Understanding, Screen Understanding, Vision Transformer, Visual Question Answering.
                             </li>
                             <li><strong>Optimization</strong> |
                                 Linear/Nonlinear/Dynamic Programming, Convex Optimization.
@@ -200,34 +205,37 @@
                     </header>
                     <ul>
                         <li><strong>Programming Languages</strong> |
-                            Python, C++, C#, Java, JavaScript, Matlab, SQL
+                            Python, C++, C#, Java, JavaScript, Matlab, SQL.
                         </li>
                         <li><strong>DL</strong> |
-                            PyTorch, TensorFlow, JAX, Pax, Hugging Face.
+                            PyTorch, TensorFlow, JAX, Hugging Face.
                         </li>
                         <li><strong>ML</strong> |
-                            scikit-learn, xgboost, NumPy, SciPy.
+                            scikit-learn, XGBoost, NumPy, SciPy.
                         </li>
                         <li><strong>NLP</strong> |
-                            Stanford CoreNLP, SpaCy, NLTK, genism, Solr/Lucene
+                            NLTK, SpaCy, genism, Solr/Lucene/OpenSearch.
                         </li>
                         <li><strong>CV</strong> |
-                            OpenCV, Pillow
+                            OpenCV, Pillow.
                         </li>
                         <li><strong>Big Data</strong> |
-                            Hadoop, Beam, MapReduce, Hive, Presto, etc.
+                            Hadoop, Apache Beam, MapReduce, Apache Hive, etc.
+                        </li>
+                        <li><strong>Web Frameworks</strong> |
+                            Django, Flask, Angular, React, Streamlit.
                         </li>
                         <li><strong>Parallel Computing</strong> |
                             OpenMP, MPI.
                         </li>
-                        <li><strong>Web Frameworks</strong> |
-                            Django, Flask, Angular.
-                        </li>
                         <li><strong>Numerical Computation</strong> |
                             Eigen, BLAS, LAPACK.
                         </li>
-                        <li><strong>Virtualization and Deployment</strong> |
-                            Docker, RHEL, Ubuntu, AWS, Azure, Google Cloud.
+                        <li><strong>MLOps</strong> |
+                            Weights & Biases, MLflow.
+                        </li>
+                        <li><strong>Cloud Ops</strong> |
+                            AWS, Microsoft Azure, Google Cloud, Docker.
                         </li>
                     </ul>
                     <footer>
@@ -247,6 +255,44 @@
 
                         <div class="row">
                             <article class="col-6 col-12-mobile special">
+                                <img src="images/screenshot-meeting-summary-700x400.png" alt=""  class="image featured"/>
+                                <header>
+                                    <h3>Meeting Summarization and its Auto-Evaluations</h3>
+                                </header>
+                                <p>
+                                    In an era of long-context LLM, summarization seems readily available at our fingertips. 
+                                    However, it is not the case for an hour-long meeting recording, which may contain 10,000+ words with errors inherited from ASR.
+                                    We developed a novel LLM subsystem that first chapterizes the meeting into topics, summarizes each topic to form summary bullet points and actionable items, 
+                                    and then stitches back timestamps for each chapter.
+                                </p>
+                                <p>
+                                    Evaluation of LLM generation quality is a challenging task. To facilitate summary quality assessment for continuous monitoring, 
+                                    we developed a set of both reference-free and reference-based metrics, utilizing auxiliary deep learning models and LLMs as judges. 
+                                    This enables continuous monitoring and provides a feedback loop for LLM fine-tuning and model selection.
+                                </p>
+                            </article>
+                            <article class="col-6 col-12-mobile special">
+                                <img src="images/screenshot-efficient-llms-700x400.png" alt=""  class="image featured"/>
+                                <header>
+                                    <h3>LLM-Based Contact Center Analytics and Cost-Efficient Deployment</h3>
+                                </header>
+                                <p>
+                                Large Language Models have transformed the Contact Center industry, 
+                                manifesting in enhanced self-service tools, streamlined administrative processes, 
+                                and augmented agent productivity.
+                                This work delineates our system that automates call driver generation, which serves as the foundation 
+                                for tasks such as topic modeling, incoming call classification, trend detection, and FAQ generation, 
+                                delivering actionable insights for contact center agents and administrators to consume.
+
+                                </p>
+                                <p>
+                                We present a cost-efficient LLM system design, with 1) a comprehensive evaluation of proprietary, 
+                                open-weight, and fine-tuned models and 2) cost-efficient strategies, 
+                                and 3) the corresponding cost analysis when deployed in production environments.
+                                </p>
+                                <a href="https://arxiv.org/" target="_blank">Preprint: Coming Soon</a>.
+                            </article>                            
+                            <article class="col-6 col-12-mobile special">
                                 <img src="images/screenshot-screen-qa-700x400.png" alt=""  class="image featured"/>
                                 <header>
                                     <h3>ScreenQA: Question-Answer Pairs Over Mobile App Screenshots</h3>
@@ -255,17 +301,18 @@
                                     We present a new task and dataset, ScreenQA, for screen content understanding via question
                                     answering. The existing screen datasets are focused either on structure and component-level
                                     understanding, or on a much higher-level composite task such as navigation and task completion. 
-                                    We attempt to bridge the gap between these two by annotating 80,000+ question-answer pairs over
-                                    the RICO dataset in hope to benchmark the screen reading comprehension capacity.
+                                    We bridge this gap by annotating 80,000+ question-answer pairs over the RICO dataset to benchmark
+                                    screen reading comprehension capacity.
                                 </p>
                                 <p>
                                     The challenge of this task lies in three aspects:
                                     1) Screenshots are a natural mixture of text, symbols, and images in a layout. The model is expected
                                        to understand interactions between these modalities.
                                     2) UI elements are not precisely given. Although the structural information such view hierarchies and 
-                                       DOM trees, may be available, they typically exhibit noticeable rendering issues (right of the image).
+                                       DOM trees may be available, they typically exhibit noticeable rendering issues (right of the image).
                                     3) The complete answer may come from multiple parts from the screen (left of the image).
                                        The task requires the model to include all pieces to get a full score.
+                                    Accepted to NAACL 2025.
                                 </p>
                                 <a href="https://arxiv.org/abs/2209.08199" target="_blank">Preprint</a>.
                             </article>
@@ -275,20 +322,10 @@
                                     <h3>Multimodal LLM for Document and Screen Understanding</h3>
                                 </header>
                                 <p>
-                                    Scanned document images and screenshots share a common characteristic:
-                                    Both of these image pixels contain text phrases arranged in a non-sequential manner.
-                                    To build a foundation model that works for various downstream tasks, we need to
-                                    inject multiple modalities, such as text phrases, coordinates of the phrases, 
-                                    the corresponding image crops, and the overall image pixels, in order to provide comprehensive
-                                    understanding and representation learning.
+                                    Scanned document images and screenshots share a common characteristic: both contain text phrases arranged in a non-sequential manner within image pixels. To build a foundation model that works for various downstream tasks, we need to inject multiple modalities, such as text phrases, coordinates of the phrases, the corresponding image crops, and the overall image pixels, in order to provide comprehensive understanding and representation learning.
                                 </p>
                                 <p>
-                                    To this aim, we integrate various state-of-the-art architectures: From language modeling,
-                                    we investigate Encoder-Decoder/Decoder-Only LLMs.
-                                    From document understanding, Attention Bias develops the awareness of 2D layout alignment.
-                                    From image encoding, ResNet, DETR, Vision Transformer (ViT), etc., are explored.
-                                    From modality fusion, Perceiver, Flamingo, Prompt Tuning, Cross Attention are studied.
-                                    The goal is simple: to provide the best model that works well for all types of Document and Screen Understanding tasks.
+                                    To achieve this aim, we integrate various state-of-the-art architectures: From language modeling, we investigate Encoder-Decoder/Decoder-Only LLMs. From document understanding, Attention Bias develops the awareness of 2D layout alignment. From image encoding, we explore ResNet, DETR, Vision Transformer (ViT), and other approaches. From modality fusion, we study Perceiver, Flamingo, Prompt Tuning, and Cross Attention. The goal is simple: to provide the best model that works well for all types of Document and Screen Understanding tasks.
                                 </p>
                               
                             </article>
